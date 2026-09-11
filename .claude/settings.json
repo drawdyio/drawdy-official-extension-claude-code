@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh search *)",
+      "WebFetch(domain:ddp.drawdy.io)",
+      "Bash(curl -s \"https://api.github.com/repos/drawdyio/drawdy-driver-protocol/git/trees/HEAD?recursive=1\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(t['path']\\) for t in d.get\\('tree',[]\\) if 'node_modules' not in t['path']]\")",
+      "Bash(git -C /Users/kitipatteachasupinun/Desktop/drawdy-official-extension-claude-code log --oneline -5)",
+      "Bash(curl -s https://raw.githubusercontent.com/drawdyio/drawdy-driver-protocol/HEAD/examples/drawdy-claude-canvas/bundle.ts)",
+      "Bash(python3 -c ' *)",
+      "Bash(git -C /Users/kitipatteachasupinun/Desktop/drawdy-official-extension-claude-code remote -v)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
